@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      #sidebar {
+        background-color: rgba(150, 150, 150, 0.1);
+        font-family: Arial;
+        height: 100%;
+        left: 0;
+        overflow-y: scroll;
+        padding: 20px;
+        position: fixed;
+        top: 0;
+        width: 200px;
+      }
+    </style>
+  </head>
+  <body style="margin: 0">
+    <div id="sidebar">
+      <h1>DataViz</h1>
+      <p>
+        This is a visualization of random data.
+        It was initially a hackathon project to get a better sense of where users
+        are being referred to from websites with social plugins and random data
+        is currently being used as a placeholder for any different type of data.
+      </p>
+      <p>
+        Click on one of the circles to see some data.
+      </p>
+      <div id="data">
+      </div>
+    </div>
+    <canvas id="canvas"></canvas>
+    <script src="constants.js"></script>
+    <script src="results.js"></script>
+    <script src="helper.js"></script>
+    <script src="domain.js"></script>
+    <script src="render.js"></script>
+    <script src="metadata.js"></script>
+    <script src="viz.js"></script>
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-47938100-2', 'auto');
+      ga('send', 'pageview');
+
+    </script>
+  </body>
+</html>
